@@ -14,61 +14,110 @@
     <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
     <meta property="og:title" content="Naveen Kumar| Web Developer">
     <meta property="og:description" content="Check out my portfolio and projects!">
-    <meta property="og:image" content="">
+    <meta property="og:image" content="./my photo.jpeg">
     <meta property="og:url" content="https://Naveen Kumar.com">
     <meta property="og:type" content="website">
  
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Naveen Kumar| Web Developer">
+    <meta name="twitter:title" content="Pooja Sri| Web Developer">
     <meta name="twitter:description" content="Check out my portfolio!">
- 
+ <link rel="stylesheet" href="./index.css">
    
 </head>
 <body>
-    <nav>
-        <a href="">About</a>
-        <a href="">Skills</a>
-        <a href="">Projects</a>
-        <a href="">Contact</a>
-    </nav>
-    <header>
-        <h1>Hi, I'm Naveen Kumar 👋</h1>
-        <p>I'm a passionate web developer from bengaluru</p>
-        <a href="">Hire Me</a>
+    <header class="site-header">
+         <nav class="navbar">
+             <div class="logo"> NK </div>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           <button class="them-toggle" title="Toggle Dark"  aria-label="Toggle Dark Mode">🌙</button>
+           <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+
+            
+        </nav>
 
     </header>
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="" alt="">
-        <p>I love building things on the web. Currently learning Html ,Css ,Javascript and React.</p>
+    <main>
+        <section class="hero-section" id="hero">
+        
+        <h1>Hi, I'm Naveen Kumar 👋</h1>
+        <p class="tagline">I'm a passionate web developer from bengaluru</p>
+        
+        <h1>Hi, I'm Naveen Kumar 👋</h1>
+        <p>I'm a passionate web developer from bengaluru</p>
+        
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
 
-    </section>
-    <section id="skills">
-        <h2>My Skills</h2>
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>React</li>
-        </ul>
-    </section>
-    <section id="projects">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>Project 1</h3>
-            <p>Description of Project</p>
-            <a href="#">View Project</a>
+        </div>
+        </section>
+
+    
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <figure>
+                <img src="./my photo.jpeg" alt="Naveen Kumar" width="200" height="200">
+                <figcaption>Naveen Kumar - Web Developer</figcaption>
+            </figure>
+         
+         <div class="about-text">
+            <p>I love building things on the web. Currently learning Html ,Css ,Javascript and React.</p>
+        </div>
         </div>
     </section>
-    <section id="contact">
-        <h2>Contact Me</h2>
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-level="90">HTML</div>
+            <div class="skill-item" data-level="80">CSS</div>
+            <div class="skill-item" data-level="70">JavaScript</div>
+            <div class="skill-item" data-level="60">React</div>
+            <div class="skill-item" data-level="80">Python</div>
+        
+        </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+               <img src="./weather.webp"  width="200" height="200" alt="weather project">
+               <h3>Weather App</h3>
+               <p>Real-time dashboard using OpenWeatherMap API</p>
+               <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">API</span>
+                <div>
+               <div>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+               </div>
+            </article>
+        </div>
+        
+    </section >
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
        <p>Have a project in mind </p>
        <form action="">
+
+        <div class="form-group">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+        </div>
+
+        <div class="form-group">
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+        </div>
+
+        <div class="form-group">
         <label for="subject">Subject:</label><br>
         <select name="subject" id="subject"> <br>
             <option value="">Select a subject</option>
@@ -76,7 +125,6 @@
             option value="collaboration">I want to collaborate</option>
             <option value="other">Other</option>
         </select> <br>
-
 
         <label for="message">Message:</label><br>
 
@@ -86,9 +134,15 @@
        <p>Email  <a href="mailto:naveenkumar@example.com">naveenkumar@example.com</a> </p>
 
     </section>
+    </main>
 
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2026 Naveen Kumar. All rights reserved.</p>
+        <nav aria-label="Social links">
+            <a href="https://github.com/naveenkumar" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/naveen-goud-pp" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:naveengouda802@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        </nav>
     </footer>
     
 </body>
