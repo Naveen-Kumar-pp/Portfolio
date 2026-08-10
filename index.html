@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <!-- SEO Meta Tags -->
+    <title>Naveen Kumar| Web Developer Portfolio</title>
+    <meta name="description" content="Full-stack web developer specializing
+          in React and Node.js. Available for freelance projects.">
+    <meta name="keywords" content="web developer, React, JavaScript, portfolio">
+    <meta name="author" content="Naveen kumar">
+ 
+    <!-- Open Graph (for Facebook, LinkedIn, WhatsApp previews) -->
+    <meta property="og:title" content="Naveen Kumar| Web Developer">
+    <meta property="og:description" content="Check out my portfolio and projects!">
+    <meta property="og:image" content="./my photo.jpeg">
+    <meta property="og:url" content="https://Naveen Kumar.com">
+    <meta property="og:type" content="website">
+ 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Pooja Sri| Web Developer">
+    <meta name="twitter:description" content="Check out my portfolio!">
+ <link rel="stylesheet" href="./index.css">
+   
+</head>
+<body>
+    <header class="site-header">
+
+         <nav class="navbar">
+             <div class="logo"> NK </div>
+             
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li> <a href="#skills">Skills</a></li>
+                <li> <a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+           <button class="them-toggle" title="Toggle Dark"  aria-label="Toggle Dark Mode">🌙</button>
+           <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">≡</button>
+
+            
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero-section" id="hero">
+        
+        <h1>Hi, I'm Naveen Kumar 👋</h1>
+        <p class="tagline">I'm a passionate web developer from bengaluru</p>
+        
+        <h1>Hi, I'm Naveen Kumar 👋</h1>
+        <p>I'm a passionate web developer from bengaluru</p>
+        
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+
+        </div>
+        </section>
+
+    
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <figure>
+                <img src="./my photo.jpeg" alt="Naveen Kumar" width="200" height="200">
+                <figcaption>Naveen Kumar - Web Developer</figcaption>
+            </figure>
+         
+         <div class="about-text">
+            <p>I love building things on the web. Currently learning Html ,Css ,Javascript and React.</p>
+        </div>
+        </div>
+    </section>
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item" data-level="90">HTML</div>
+            <div class="skill-item" data-level="80">CSS</div>
+            <div class="skill-item" data-level="70">JavaScript</div>
+            <div class="skill-item" data-level="60">React</div>
+            <div class="skill-item" data-level="80">Python</div>
+        
+        </div>
+    </section>
+    <section id="projects" class="projects-section">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <article class="project-card" data-category="web">
+               <img src="./weather.webp"  width="200" height="200" alt="weather project">
+               <h3>Weather App</h3>
+               <p>Real-time dashboard using OpenWeatherMap API</p>
+               <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">API</span>
+                <div>
+               <div>
+                <a href="#" class="btn">Live Demo</a>
+                <a href="#" class="btn">GitHub</a>
+               </div>
+            </article>
+        </div>
+        
+    </section >
+    <section id="contact" class="contact-section">
+        <h2>Get In Touch</h2>
+       <p>Have a project in mind </p>
+       <form action="">
+
+        <div class="form-group">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required placeholder="Enter your name"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required placeholder="Enter your email"><br>
+        </div>
+
+        <div class="form-group">
+        <label for="subject">Subject:</label><br>
+        <select name="subject" id="subject"> <br>
+            <option value="">Select a subject</option>
+            <option value="hire">I want to hire you</option>
+            option value="collaboration">I want to collaborate</option>
+            <option value="other">Other</option>
+        </select> <br>
+        </div>
+
+        <div class="form-group">
+
+        <label for="message">Message:</label><br>
+
+        <textarea name="message" id="message" cols="30" rows="10" required></textarea> <br>
+        </div>
+        <button type="submit">Send message</button>
+       </form>
+       <p>Email  <a href="mailto:naveenkumar@example.com">naveenkumar@example.com</a> </p>
+
+    </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Naveen Kumar. All rights reserved.</p>
+        <nav aria-label="Social links">
+            <a href="https://github.com/naveenkumar" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com/in/naveen-goud-pp" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="mailto:naveengouda802@gmail.com" target="_blank" rel="noopener noreferrer">Email</a>
+        </nav>
+    </footer>
+    
+</body>
+</html>
